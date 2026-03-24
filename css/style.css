@@ -241,3 +241,126 @@ img {
     color: #ffffff;
     font-size: 20px;
 }
+
+/* ABOUT ME  */
+
+#about {
+    margin-top: 140px;
+}
+
+
+#about > div > img {
+    height: auto;
+    width: auto;
+}
+
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media screen and (max-width: 720px) {
+    
+.wrapper {
+    padding: 0 70px;
+  }
+
+.intro {
+    margin-top: 550px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 16px;
+}
+
+#projects > .fila > .col {
+    width: 100%;
+  }
+
+.logo {
+    height: 32px;
+    width: 61px;
+}
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px){
+    
+.wrapper {
+    padding: 0 30px;
+ }
+
+h1 {
+    font-size: 24px;
+}
+
+a {
+    font-size: 12px;
+}
+
+.logo {
+    height: 28px;
+    width: 57px;
+}
+
+.designer {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    margin-top: 450px;
+}
+
+#projects {
+    margin-top: 100px;
+}
+
+#projects > .fila {
+    flex-wrap: wrap;
+  }
+
+#projects > .fila > .col.uno{
+    width: 100%;
+}
+
+#projects > .fila > .col.dos{
+    width: 100%;
+}
+
+.texto_derecha {
+    text-align: left;
+} 
+
+#projects > .fila > .col > .image {
+    height: 200px;
+}
+
+#index {
+    margin-top: 100px;
+}
+
+#index > div > h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+#index > div > p {
+    margin: 0;
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+#footer {
+    margin-top: 100px;   
+}
+
+
+}
