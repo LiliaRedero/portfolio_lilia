@@ -7,9 +7,9 @@
 @font-face {
     font-family: paragraph_text;
     src: url(../font/paragraph_text/PPEditorialNew-Ultralight.otf);
-    font-weight: 400;
+    /* font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: swap; */
 }
 
 @font-face {
@@ -30,7 +30,7 @@
 
 /* COLOR DE FONDO */
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 /* WRAPPER  */
@@ -56,8 +56,8 @@ hr {
 }
 
 .logo {
-    height: 42px;
-    width: 71px;
+    height: 38px;
+    width: 67px;
 }
 
 /* EDICIÓN TEXTOS POR OMISIÓN */
@@ -74,7 +74,7 @@ h1 {
 
 h2 {
     font-family: body_text;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 450;
     margin-bottom: 40px;
 }
@@ -88,7 +88,7 @@ h3 {
 
 p {
     font-family: body_text;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
     margin-top: 5px;
 }
@@ -118,6 +118,9 @@ nav > div > a:hover {
    height: auto;
    width: auto;
 } */
+
+/* --------------------------------------------------------------- */
+/* INDEX */
 
 /* PARRAFO INICIAL*/
 .intro {
@@ -166,7 +169,7 @@ img {
     height: 400px;
     /* border-radius: 20px; */
     overflow: hidden;
-    background-color: white
+    /* background-color: white */
 }
 
 #projects > .fila > .col > div > img {
@@ -242,19 +245,135 @@ img {
     font-size: 20px;
 }
 
+/* -------------------------------------------------------------- */
 /* ABOUT ME  */
 
 #about {
     margin-top: 140px;
 }
 
+#about > div > div > img {
+    height: 300px;
+    width: 300px;
+}
 
-#about > div > img {
-    height: auto;
-    width: auto;
+#about > .nofrase {
+    width: 450px;
+    position: absolute;
+}
+
+#about > div > div > p {
+    width: 350px;
+}
+
+#about > div > .image_text {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+#about > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: absolute; */
+    /* top: 310px; */
+    position: relative;
+    margin-top: 20px;
+}
+
+#about > nav > .frase {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    width: 450px;
+    
 }
 
 
+
+
+
+/* #about > div {
+    position: absolute;
+    top: 310px;
+} */
+
+/* STUDIES  y LANGUAGE */
+
+.studies > h2 {
+   font-size: 24px;
+   margin-bottom: 14px;
+}
+
+.studies > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.studies > div > .year {
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.especificacion {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.language > h2 {
+   font-size: 24px;
+   margin-bottom: 14px;
+}
+
+.language > div {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+}
+
+.language > div > div > .french {
+    margin-top: 40px;
+}
+
+
+/* SKILLS  */
+
+.skills > h2 {
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.skills > ul {
+    padding: 0;
+}
+
+.skills > ul > li, p {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    list-style: none;
+}
+
+/* ALINEAR */
+
+#column {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    justify-self: right;
+    gap: 20px;
+}
+
+
+
+/* ---------------------------------------------------------------- */
 /* MEDIA QUERIES */
 
 /* TABLET */
@@ -271,10 +390,9 @@ img {
 h1 {
     font-size: 32px;
 }
-
-p {
+ a {
     font-size: 16px;
-}
+ }
 
 #projects > .fila > .col {
     width: 100%;
@@ -283,6 +401,10 @@ p {
 .logo {
     height: 32px;
     width: 61px;
+}
+
+#projects > .fila > .col > .image {
+    height: 200px;
 }
 
 }
@@ -303,8 +425,8 @@ a {
 }
 
 .logo {
-    height: 28px;
-    width: 57px;
+    height: 24px;
+    width: 50px;
 }
 
 .designer {
@@ -313,7 +435,7 @@ a {
 }
 
 .intro {
-    margin-top: 450px;
+    margin-top: 500px;
 }
 
 #projects {
@@ -355,7 +477,7 @@ a {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 #footer {
