@@ -413,14 +413,109 @@ img {
     margin-top: 140px;
 }
 
-#polydor > .imagenpolydor {
-    display: flex;
-    width: 1490px;
-    height: 100%;
-    justify-self: middle;
-   margin-top: 140px;
+#polydor > #intro > div > div > h1{
+    margin-bottom: 0;
 }
 
+#polydor > div {
+    margin-top: 140px;
+}
+
+/* IMAGENES */
+
+#polydor > #images > div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    
+}
+
+#polydor > div > div > img {
+    height: 100%;
+}
+
+#polydor > #images > div:nth-child(5) {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#polydor > #images > div:nth-child(6) {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    background-color: white;
+    align-items: center;
+}
+
+#polydor > #images > div:nth-child(6) > img:first-child {
+    margin-left: 70px;
+}
+
+#polydor > #images > div:last-child {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#polydor > #images > div:last-child > img:first-child {
+    height: 463px;
+}
+
+/* RESPONSIVE  */
+
+#polydor > #images > div {
+    height: auto;
+    /* border-radius: 20px; */
+    overflow: hidden;
+    /* background-color: white */
+    justify-content: center;
+}
+
+#polydor > div > div > img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SPECIFICATIONS */
+#specifications > div > div > ul > li > p{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    list-style: none;
+}
+#specifications > div > div  > div > ul {
+    padding: 0;
+}
+
+#specifications > div > div > div > p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#specifications > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#specifications > div > div {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+
+}
+
+.uno {
+    margin-left: 200px;
+}
+
+.dos {
+    margin-right: 200px;
+}
 
 
 
