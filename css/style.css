@@ -93,6 +93,7 @@ p {
     margin-top: 5px;
 }
 
+
 /* ESPACIO EN CABECERA */
 .wrapper > nav > div {
     display: flex;
@@ -101,23 +102,14 @@ p {
 }
 
 /* HOVER  */
+nav > div > a {
+    transition: 0.5s;
+}
 
 nav > div > a:hover {
     color: #f20678
 }
 
-
-/* .image.line:hover {
-    color: #f20678
-}
-
-
-.image.line {
-   border: 2px yellow;
-   padding: 1px;
-   height: auto;
-   width: auto;
-} */
 
 /* --------------------------------------------------------------- */
 /* INDEX */
@@ -223,6 +215,12 @@ img {
     margin-top: 15px;
 }
 
+/* CONTACTO */
+
+#contact > .social_icons {
+    font-size: 24px;
+}
+
 /* FOOTER  */
 #footer {
     margin-top: 140px;
@@ -234,15 +232,34 @@ img {
     margin-bottom: 20px;
 }
 
-/* i {
-    color: #ffffff;
-    font-size: 22px;
-    margin-right: 10px;
-} */
 
-#footer > div > .social_icons > a {
-    color: #ffffff;
-    font-size: 20px;
+/* EFECTO */
+
+#projects > .fila > .col > .image {
+    position: relative;
+}
+
+#projects > .fila > .col > .image > .overlay {
+    background-color: rgba(242, 6, 120, 0.837);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 10px;
+}
+
+
+#projects > .fila > .col > .image > .overlay:hover {
+    opacity: 1;
 }
 
 /* -------------------------------------------------------------- */
@@ -260,9 +277,10 @@ img {
 #about > .nofrase {
     width: 450px;
     position: absolute;
+    margin-bottom: 70px;
 }
 
-#about > div > div > p {
+#about > div > div > div > p {
     width: 350px;
 }
 
@@ -278,27 +296,19 @@ img {
     align-items: center;
     justify-content: space-between;
     /* position: absolute; */
-    /* top: 310px; */
+    top: 25px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 90px;
 }
 
-#about > nav > .frase {
+#about > .frase {
     text-align: right;
     display: flex;
-    justify-content: flex-end;
     width: 450px;
+    justify-self: flex-end;
+    margin-top: 70px;
     
 }
-
-
-
-
-
-/* #about > div {
-    position: absolute;
-    top: 310px;
-} */
 
 /* STUDIES  y LANGUAGE */
 
@@ -371,10 +381,54 @@ img {
     gap: 20px;
 }
 
+/* CONTACTO */
+
+#contact {
+    margin-top: 140px;
+}
+
+#contact > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* FOOTER  */
+
+#footerabout > div > p {
+    font-family: button_text;
+    font-size: 14px;
+}
+
+#footerabout {
+    margin-top: 40px;
+}
+
+/* -------------------------------------------------------------------- */
+/* DETALLE POLYDOR */
+
+#polydor {
+    margin-top: 140px;
+}
+
+#polydor > .imagenpolydor {
+    display: flex;
+    width: 1490px;
+    height: 100%;
+    justify-self: middle;
+   margin-top: 140px;
+}
+
+
 
 
 /* ---------------------------------------------------------------- */
 /* MEDIA QUERIES */
+
+/* HOME */
+/* ················· */
 
 /* TABLET */
 @media screen and (max-width: 720px) {
@@ -390,13 +444,14 @@ img {
 h1 {
     font-size: 32px;
 }
- a {
+
+a {
     font-size: 16px;
- }
+}
 
 #projects > .fila > .col {
     width: 100%;
-  }
+}
 
 .logo {
     height: 32px;
@@ -414,7 +469,7 @@ h1 {
     
 .wrapper {
     padding: 0 30px;
- }
+}
 
 h1 {
     font-size: 24px;
@@ -484,5 +539,161 @@ h2 {
     margin-top: 100px;   
 }
 
+}
+
+/* ABOUT */
+/* ··················· */
+
+/* TABLET  */
+
+@media screen and (max-width: 1300px) {
+
+
+#about > div {
+    flex-wrap: wrap;
+    top: 216px;
+}
+
+#column {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    gap: 50px;
+}
+
+#column > .studies > div > .year {
+    margin-right: 50px;
+}
+
+#about > .frase {
+    margin-top: 300px;
+}
 
 }
+
+@media screen and (max-width: 1080px) {
+
+#about > div > div > div:nth-child(2) {
+    order: 4;
+}
+
+#column {
+    flex-wrap: wrap;
+}
+
+#about > .frase {
+    margin-top: 55px;
+}
+
+}
+
+
+@media screen and (max-width: 970px) {
+
+#about > div > .image_text > div > p {
+    width: 500px;
+}
+
+
+#about > div > .image_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+}
+
+
+#about > div > .image_text > .divimage {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#about > div > .image_text > .divimage > img {
+    height: 100%;
+    object-fit: cover;
+    vertical-align: auto;
+}
+
+}
+
+@media screen and (max-width: 937px) {
+
+#column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+}
+
+@media screen and (max-width: 840px) {
+
+#about > h1 {
+    font-size: 30px;
+}
+
+#about > .frase {
+    width: 350px;
+    margin-top: 45px;
+}
+
+#about > .nofrase {
+    width: 350px;
+}
+
+#about > div {
+    top: 170px;
+}
+    
+}
+
+/* TABLET Y MOBILE  */
+
+@media screen and (max-width: 595px) {
+
+#about > div > .image_text > div > p {
+    width: 400px;
+}
+
+#about > .frase {
+    width: auto;
+}
+
+#about > .nofrase {
+    width: auto;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+#about > div {
+    top: auto;
+    margin-top: 20px;
+}
+
+#about > div > .image_text > div > p {
+    width: auto;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+#about {
+    margin-top: 100px;
+}
+
+#about > div > .image_text > div > p {
+    font-size: 16px;
+}
+
+#contact > div {
+   gap: 10px;
+}
+
+#contact {
+    margin-top: 100px;
+}
+
+}
+
