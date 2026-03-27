@@ -107,7 +107,7 @@ nav > div > a {
 }
 
 nav > div > a:hover {
-    color: #f20678
+    color: #e406ecde
 }
 
 
@@ -239,7 +239,7 @@ img {
 }
 
 #projects > .fila > .col > .image > .overlay {
-    background-color: rgba(242, 6, 120, 0.837);
+    background-color: #e406ecde;
     position: absolute;
     left: 0;
     top: 0;
@@ -287,7 +287,11 @@ img {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    align-items: center;
+    /* align-items: center; */
+}
+
+#about > div > .image_text > .divimage > img {
+    height: 500px;
 }
 
 #about > div {
@@ -297,7 +301,7 @@ img {
     /* position: absolute; */
     top: 25px;
     position: relative;
-    margin-top: 90px;
+    margin-top: 140px;
 }
 
 #about > .frase {
@@ -641,7 +645,7 @@ img {
 
     #about > div {
         flex-wrap: wrap;
-        top: 216px;
+        top: 100px;
     }
 
     #column {
@@ -656,7 +660,7 @@ img {
     }
 
     #about > .frase {
-        margin-top: 300px;
+        margin-top: 150px;
     }
 
 }
@@ -680,6 +684,7 @@ img {
 
 @media screen and (max-width: 970px) {
 
+
     #about > div > .image_text > div > p {
         width: 500px;
     }
@@ -692,15 +697,21 @@ img {
         /* align-items: center; */
     }
 
-
-    #about > div > .image_text > .divimage {
-        height: 300px;
-        width: 100%;
-        overflow: hidden;
+    #about > div {
+        margin-top: 50px;
+        top: 200px;
     }
 
+
+    /* #about > div > .image_text > .divimage { */
+        /* height: 256px; */
+        /* width: 100%; */
+        /* overflow: hidden; */
+    /* } */
+
     #about > div > .image_text > .divimage > img {
-        height: 100%;
+        height: 500px;
+        width: auto;
         object-fit: cover;
         vertical-align: auto;
     }
@@ -714,6 +725,9 @@ img {
         flex-direction: column;
         gap: 20px;
     }
+
+    
+
 
 }
 
@@ -743,7 +757,7 @@ img {
 @media screen and (max-width: 595px) {
 
     #about > div > .image_text > div > p {
-        width: 400px;
+        width: 300px;
     }
 
     #about > .frase {
@@ -775,6 +789,14 @@ img {
 
     #about > div > .image_text > div > p {
         font-size: 16px;
+        width: 350px;
+    }
+
+      #about > div > .image_text > .divimage > img {
+        height: 400px;
+        width: auto;
+        object-fit: cover;
+        vertical-align: auto;
     }
 
     #contact > div {
@@ -900,3 +922,5 @@ img {
     }
 
 }
+
+
