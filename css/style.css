@@ -471,6 +471,10 @@ img {
     align-items: flex-start;
 }
 
+#polydor > #fotos > div:last-child > img:first-child {
+    height: 462px;
+}
+
 
 
 /* RESPONSIVE  */
@@ -515,7 +519,41 @@ img {
     flex-direction: column;
 }
 
+/* KNOW  */
 
+#ux > #intro {
+    margin-top: 140px;
+}
+
+#gallery {
+   margin-top: 30px;
+}
+
+#gallery > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+#gallery > ul > li {
+    /* width: 33.333%; */
+    flex: 30%;
+}
+
+#gallery > ul > li:nth-child(4) {
+    opacity: 0;
+}
+
+#gallery > ul > li:nth-child(3) {
+    opacity: 0;
+}
+
+#gallery > ul > li:nth-child(8) > div {
+    background-color: #FFE590;
+}
 
 
 /* ---------------------------------------------------------------- */
@@ -792,7 +830,7 @@ img {
         width: 350px;
     }
 
-      #about > div > .image_text > .divimage > img {
+    #about > div > .image_text > .divimage > img {
         height: 400px;
         width: auto;
         object-fit: cover;
@@ -921,6 +959,49 @@ img {
         height: 250px; 
     }
 
+}
+
+/* KNOW */
+/* .................  */
+
+/* TABLET  */
+
+@media screen and (max-width: 1165px) {
+    #ux > #intro > div > div h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    #gallery > ul > li {
+        flex: 45%;
+    }
+
+    #gallery > ul > li:nth-child(4) {
+    opacity: 1;
+    }
+
+    #gallery > ul > li:nth-child(3) {
+    opacity: 1;
+    }
+    #gallery > ul > li:last-child {
+    display: none;
+    }
+
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 480px) {
+
+    #gallery > ul > li {
+        flex: 100%;
+    }
+
+    #ux > #specifications > div > div > p {
+        font-size: 16px;
+    }
 }
 
 
